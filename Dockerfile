@@ -41,3 +41,5 @@ RUN mkdir -p /home/rstudio/.R/ \
 RUN install2.r --error \
     matrixStats \
     loo 
+
+USER docker
