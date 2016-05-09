@@ -10,7 +10,8 @@ RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
                    clang \
                    texlive-xetex \
-                   zsh
+                   zsh \
+                   x11-xserver-utils
 
 ## Download and install oh-my-zsh just for a nice command-line
 ## experience in interactive mode
@@ -42,4 +43,3 @@ RUN install2.r --error \
     matrixStats \
     loo 
 
-USER docker
