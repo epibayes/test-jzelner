@@ -14,7 +14,7 @@ RUN apt-get update \
 
 ## Download and install oh-my-zsh just for a nice command-line
 ## experience in interactive mode
-RUN sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+RUN wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | zsh || true
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
