@@ -4,10 +4,17 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 # Install clang to use as compiler
 # clang seems to be more memory efficient with the templates than g++
 # with g++ rstan cannot compile on docker hub due to memory issues
+
+## Also include texlive and zsh
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
                    clang \
-                   texlive-xetex
+                   texlive-xetex \
+                   zsh
+
+## Download and install oh-my-zsh just for a nice command-line
+## experience in interactive mode
+RUN sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
