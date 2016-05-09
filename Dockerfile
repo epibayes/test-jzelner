@@ -7,7 +7,7 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
                    clang \
-                   texlive-xetex \
+                   texlive-xetex 
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
