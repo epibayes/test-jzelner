@@ -1,5 +1,5 @@
 FROM rocker/hadleyverse:latest
-MAINTAINER Jeffrey Arnold jeffrey.arnold@gmail.com
+MAINTAINER Jon Zelner jzelner@gmail.com
 
 # Install clang to use as compiler
 # clang seems to be more memory efficient with the templates than g++
@@ -7,7 +7,7 @@ MAINTAINER Jeffrey Arnold jeffrey.arnold@gmail.com
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
                    clang \
-                   texlive-xetex
+                   texlive-xetex \
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
