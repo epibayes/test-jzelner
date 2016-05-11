@@ -11,4 +11,4 @@ RUN install2.r --error \
     deldir \
     pipeR \
     rgdal \
-    regeos
+    rgeos
