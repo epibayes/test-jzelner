@@ -11,7 +11,8 @@ RUN apt-get update \
                    clang \
                    texlive-xetex \
                    zsh \
-                   x11-xserver-utils
+                   x11-xserver-utils \
+                   curl
 
 ## Download and install oh-my-zsh just for a nice command-line
 ## experience in interactive mode
