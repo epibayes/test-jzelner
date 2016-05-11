@@ -2,7 +2,7 @@ from jonzelner/docker-rstan
 
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
-        libgdal1-dev \
+        libgdal-dev \
         libproj-dev
         
 RUN install2.r --error \
