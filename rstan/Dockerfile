@@ -10,6 +10,7 @@ RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
                    clang \
                    texlive-xetex \
+                   texlive-fonts-extra \
                    zsh \
                    x11-xserver-utils \
                    curl
