@@ -6,7 +6,7 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 # with g++ rstan cannot compile on docker hub due to memory issues
 
 ## Also include texlive and zsh
-RUN apt-get update && apt-get install -y --no-install-recommends clang
+RUN apt-get update && apt-get install -y --no-install-recommends clang-3.5
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
