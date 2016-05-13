@@ -6,13 +6,11 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 # with g++ rstan cannot compile on docker hub due to memory issues
 
 ## Also include texlive and zsh
-RUN apt-get update \ 
+RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
                    clang \
                    texlive-xetex \
-                   texlive-fonts-extra \
                    zsh \
-                   x11-xserver-utils \
                    curl
 
 ## Download and install oh-my-zsh just for a nice command-line
@@ -43,5 +41,4 @@ RUN mkdir -p /home/rstudio/.R/ \
 # Install loo
 RUN install2.r --error \
     matrixStats \
-    loo 
-
+    loo
