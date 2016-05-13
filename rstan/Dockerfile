@@ -7,7 +7,7 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 
 ## Also include texlive and zsh
 RUN apt-get update \
-	&& apt-get install -y --no-install-recommends \
+		&& apt-get install -y \
                    clang \
                    texlive-xetex \
                    zsh \
