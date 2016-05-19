@@ -33,6 +33,5 @@ RUN mkdir -p /home/rstudio/.R/ \
 
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
-                   curl \
-                   texlive-xetex
+                   curl 
 
