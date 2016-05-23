@@ -36,5 +36,5 @@ RUN apt-get update \
                    curl 
 
 RUN apt-get update \ 
-	&& apt-get install -y --no-install-recommends \
+	&& apt-get install -t unstable -y --no-install-recommends \
                    texlive-xetex 
