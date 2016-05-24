@@ -37,4 +37,5 @@ RUN apt-get update \
 
 RUN apt-get update \ 
 	&& apt-get install -t unstable -y --no-install-recommends \
-                   texlive-xetex 
+                   texlive-xetex \
+                   texlive-fonts-extra
