@@ -1,4 +1,4 @@
-from jonzelner/docker-rstan
+from jonzelner/rstan
 
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
