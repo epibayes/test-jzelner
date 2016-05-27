@@ -11,7 +11,7 @@ RUN apt-get update \
                    clang-3.6
 
 RUN ln -s /usr/bin/clang++-3.6 /usr/bin/clang++ \
-    ln -s /usr/bin/clang-3.6 /usr/bin/clang
+    && ln -s /usr/bin/clang-3.6 /usr/bin/clang
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
