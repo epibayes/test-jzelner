@@ -10,6 +10,9 @@ RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
                    clang-3.6
 
+RUN ln -s /usr/bin/clang++-3.6 /usr/bin/clang++ \
+    ln -s /usr/bin/clang-3.6 /usr/bin/clang
+
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
     && echo "\nCXX=clang++ -ftemplate-depth-256\n" >> $HOME/.R/Makevars \
