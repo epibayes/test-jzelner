@@ -8,7 +8,7 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 # with g++ rstan cannot compile on docker hub due to memory issues
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
-                   clang
+                   clang-3.6
 
 # Global site-wide config
 RUN mkdir -p $HOME/.R/ \
