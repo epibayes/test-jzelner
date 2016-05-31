@@ -1,5 +1,7 @@
 from jonzelner/rstan
 
+USER root
+
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
         libgdal-dev \
@@ -12,3 +14,5 @@ RUN install2.r --error \
     pipeR \
     rgdal \
     rgeos
+
+USER rstudio
