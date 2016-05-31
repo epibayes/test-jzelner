@@ -42,5 +42,5 @@ RUN apt-get update \
 	&& apt-get install -t unstable -y --no-install-recommends \
                    texlive-xetex \
                    texlive-fonts-extra
-
+                   
 USER rstudio
