@@ -9,9 +9,7 @@ MAINTAINER Jon Zelner jzelner@gmail.com
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
                    clang-3.6 \
-                   ruby2.3-dev
 
-RUN gem install jekyll
 
 RUN ln -s /usr/bin/clang++-3.6 /usr/bin/clang++ \
     && ln -s /usr/bin/clang-3.6 /usr/bin/clang
