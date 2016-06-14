@@ -40,5 +40,10 @@ RUN mkdir -p /home/rstudio/.R/ \
 RUN apt-get update \ 
 	&& apt-get install -y --no-install-recommends \
                    curl 
-                   
+
+RUN apt-get update \ 
+ 	&& apt-get install -t unstable -y --no-install-recommends \
+                   texlive-xetex \
+                   texlive-fonts-extra
+
 USER rstudio
